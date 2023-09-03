@@ -9,7 +9,10 @@
 &nbsp;
 
 ### if ###
-* if is an expression. 
+| if in Kotlin | expression |
+|--------------|------------|
+| if in Java   | statement  |
+* Therefore, there is no ternary operator (condition ? then : else)
 
 &nbsp;
 
