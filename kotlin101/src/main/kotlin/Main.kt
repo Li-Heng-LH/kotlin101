@@ -10,6 +10,13 @@ fun main(args: Array<String>) {
     else println("weird")
 
     //if as expression
-    val foo = if (1 > 2) "a" else 3
+    val foo = if (1 < 2) "a" else 3
     println(foo)
+
+    //if as expression and String formatting
+    val s = if (args.size > 0) args[0] else "kotlin"  // prefer to use index
+    println("Hello $s")
+
+    //String formatting
+    println("Hey ${args.getOrNull(0)}")
 }
