@@ -22,6 +22,8 @@
 * Kotlin is statically typed. 
 * Compiler can infer the type.
 
+### Single-expression functions ###
+* 
 
 &nbsp;
 ----
