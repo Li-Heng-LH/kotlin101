@@ -16,6 +16,12 @@
 
 &nbsp;
 
+### val ###
+* val is like final in Java
+* val cannot be reassigned
+* Kotlin is statically typed. 
+* Compiler can infer the type.
+
 
 &nbsp;
 ----

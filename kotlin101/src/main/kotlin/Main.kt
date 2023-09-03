@@ -19,4 +19,9 @@ fun main(args: Array<String>) {
 
     //String formatting
     println("Hey ${args.getOrNull(0)}")
+
+    // val
+    val languages = mutableListOf("Java")
+    languages.add("Kotlin")
+    println(languages)
 }
