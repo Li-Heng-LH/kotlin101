@@ -9,6 +9,7 @@
 &nbsp;
 
 ### if ###
+* An expression resolves to a value.
 | if in Kotlin | expression |
 |--------------|------------|
 | if in Java   | statement  |
@@ -21,6 +22,10 @@
 * val cannot be reassigned
 * Kotlin is statically typed. 
 * Compiler can infer the type.
+
+### Top-Level Functions ###
+* functions defined outside any class.
+* ideal for replacement of Java Utility class static methods. 
 
 ### Single-expression functions ###
 * 
