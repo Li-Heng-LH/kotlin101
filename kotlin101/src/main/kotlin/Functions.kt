@@ -7,6 +7,8 @@ fun main() {
     println(max2(2, 3))
 
     println(callUtils())
+
+    println(returnUnit())
 }
 
 fun max(a: Int, b: Int): Int {
@@ -19,3 +21,5 @@ fun max2(a: Int, b: Int) = if (a > b) a else b
 fun callUtils(): Int {
     return increment(99)
 }
+
+fun returnUnit() {}

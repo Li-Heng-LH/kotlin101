@@ -21,11 +21,24 @@
 * val is like final in Java
 * val cannot be reassigned
 * Kotlin is statically typed. 
-* Compiler can infer the type.
+* Compiler can infer the type. 
+
+&nbsp;
+
+### Function Structure ###
+* `return void` --> `: Unit`
+* `println` a fun that returns Unit --> Unit will be printed.  
+
+&nbsp;
 
 ### Top-Level Functions ###
 * functions defined outside any class.
 * ideal for replacement of Java Utility class static methods. 
+* To import the Util methods,  
+  * `import package.method`
+  * No need to specify file name
+
+&nbsp;
 
 ### Single-expression functions ###
 * 
