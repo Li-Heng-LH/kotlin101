@@ -37,8 +37,10 @@
 fun functionName(parameter1: Type1, parameter2: Type2, ...): ReturnType {}
 ```
 
-* Can I omit parameter type in kotlin?  
-Yes, in Kotlin, you can omit the parameter types in function declarations if the compiler can infer them from the context.
+* Each parameter must be **explicitly** typed.
+* Trailing commas can be used when declaring function parameters. 
+* Functions with block body must always specify return types **explicitly**,  
+  unless it's intended for them to return `Unit`.
 
 &nbsp;
 
