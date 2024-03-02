@@ -47,6 +47,7 @@ fun functionName(parameter1: Type1, parameter2: Type2, ...): ReturnType {}
 ### Top-Level Functions ###
 * functions defined outside any class.
 * ideal for replacement of Java Utility class static methods. 
+* under the hood, implemented as static functions.
 * To import the Util methods,  
   * `import package.method`
   * No need to specify file name
