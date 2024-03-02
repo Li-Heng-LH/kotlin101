@@ -8,6 +8,8 @@ fun main () {
     displaySeparator(size = 2) //**
     println()
     displaySeparator('#', 2) //##
+    println()
+    displaySeparator(size = 2, character = '#') //##
 }
 
 fun displaySeparator(character: Char = '*',
