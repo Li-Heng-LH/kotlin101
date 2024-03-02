@@ -10,9 +10,11 @@
 
 ### if ###
 * An expression resolves to a value.  
+
 | if in Kotlin | expression | 
 |--------------|------------| 
 | if in Java   | statement  | 
+
 * Therefore, there is no ternary operator (condition ? then : else)
 
 &nbsp;
@@ -30,11 +32,10 @@
 * `println` a fun that returns Unit --> Unit will be printed.  
 
 * General function structure:   
-<pre> 
-```Kotlin
+
+```kotlin
 fun functionName(parameter1: Type1, parameter2: Type2, ...): ReturnType {}
 ```
-</pre>
 
 * Can I omit parameter type in kotlin?  
 Yes, in Kotlin, you can omit the parameter types in function declarations if the compiler can infer them from the context.
@@ -51,11 +52,9 @@ Yes, in Kotlin, you can omit the parameter types in function declarations if the
 &nbsp;
 
 ### Single-expression functions ###
-<pre>
-```Kotlin
+```kotlin
 fun functionName(parameters: ParameterType): ReturnType = expression
 ```
-</pre>
 
 * `fun double(x: Int): Int = x * 2`
 
