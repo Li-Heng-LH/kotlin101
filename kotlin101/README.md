@@ -65,9 +65,12 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 
 ### Conditionals
 * `if` is an expression
+* `when` is an expression
 * `when` as switch
   * no need break
   * no need `else` if cases are exhaustive
+* but `when` can do more: 
+  * check values
 
 &nbsp;
 
@@ -78,6 +81,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * trailing commas
 * data class
 * `when` no need break, no need default if exhaustive
+* powerful `when`
 
 &nbsp;
 

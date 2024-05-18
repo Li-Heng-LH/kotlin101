@@ -1,6 +1,8 @@
 
 fun main() {
     println(getDescription(Color.BLUE))
+    println(checkInput(""))
+    println(checkInput("y"))
 }
 
 enum class Color {
@@ -15,4 +17,11 @@ fun getDescription(color: Color) =
         Color.BLUE -> "cold"
         Color.ORANGE -> "mild"
         Color.RED -> "hot"
+    }
+
+fun checkInput(input: String) =
+    when (input) {
+        "y", "yes" -> "glad to hear that"
+        "n", "no" -> "sorry to hear that"
+        else -> "not clear"
     }
