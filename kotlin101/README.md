@@ -64,7 +64,20 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 &nbsp;
 
 ### Conditionals
+* `if` is an expression
+* `when` as switch
+  * no need break
+  * no need `else` if cases are exhaustive
 
+&nbsp;
+
+
+### Kotlin over Java: 
+* top level functions
+* single expression functions
+* trailing commas
+* data class
+* `when` no need break, no need default if exhaustive
 
 &nbsp;
 
