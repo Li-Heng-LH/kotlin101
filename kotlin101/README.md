@@ -96,6 +96,13 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 
 &nbsp;
 
+### Exceptions
+* There is no concept of checked or unchecked exceptions in Kotlin.
+* `throw` is an expression.
+* `try` is an expression.
+
+&nbsp;
+
 ## Kotlin over Java:
 * top level functions
 * single expression functions
@@ -104,6 +111,11 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * `when` no need break, no need default if exhaustive
 * powerful `when`
 * smart cast
+* No checked exceptions in Kotlin. 
+* Expressions: 
+  * `if` is an expression
+  * `throw` is an expression
+  * `try` is an expression
 
 &nbsp;
 
