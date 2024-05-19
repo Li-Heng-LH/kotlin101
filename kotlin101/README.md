@@ -84,15 +84,19 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 
 &nbsp;
 
-### ranges
+### Range and Progression
 * `in` has 2 purposes:
-  1. for iteration
-  2. to check for belonging
+  1. for iteration over Progression
+  2. to check for belonging with Range
+* Progressions: 
+  * IntProgression,
+  * LongProgression,
+  * CharProgression.
 
 &nbsp;
 
 ### Pair
-* `to` keyword is used to create a Pair
+* `to` infix function is used to create a Pair
 
 &nbsp;
 
@@ -114,6 +118,12 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 
 &nbsp;
 
+### infix functions
+* can omit dot and parentheses
+* `1.until(10)` --> `1 until 10`   
+
+&nbsp;
+
 ## Kotlin over Java:
 * top level functions
 * single expression functions
@@ -128,6 +138,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
   * `throw` is an expression
   * `try` is an expression
 * Extensions
+* Infix functions
 
 &nbsp;
 
