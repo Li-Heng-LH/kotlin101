@@ -105,6 +105,12 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 ### Extensions
 * instance method in Kotlin
 * static method in Java
+* Cannot call private members from extensions. 
+* Kotlin standard library is just = Java standard library + extensions
+  * under the hood, kotlin standard collections use java standard collections
+  * benefits: 
+  * small runtime jar
+  * easy java interop
 
 &nbsp;
 

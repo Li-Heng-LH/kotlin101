@@ -5,6 +5,8 @@ import java.lang.StringBuilder
 fun main() {
     println("hello".lastChar()) //instance method in Kotlin
     print("hey".repeat(3))
+    println()
+    standardCollections()
 }
 
 fun String.lastChar() = this.get(this.length - 1) //static method in Java
@@ -19,5 +21,11 @@ fun String.repeat(n: Int) : String {
     return sb.toString()
 }
 
+fun standardCollections() {
+    //under the hood, kotlin standard collections use java standard collections
+    println(hashSetOf("").javaClass)        //HashSet
+    println(arrayListOf("").javaClass)      //ArrayList
+    println(hashMapOf("" to "").javaClass)  //HashMap
+}
 
 
