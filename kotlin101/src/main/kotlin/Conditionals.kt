@@ -25,3 +25,13 @@ fun checkInput(input: String) =
         "n", "no" -> "sorry to hear that"
         else -> "not clear"
     }
+
+fun mix(c1: Color,
+        c2: Color,) =
+    when(setOf(c1, c2)) {
+        setOf(Color.RED, Color.RED) -> "red"
+        setOf(Color.BLUE, Color.BLUE) -> "blue"
+        else -> "not sure"
+    }
+
+

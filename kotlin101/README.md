@@ -69,8 +69,10 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * `when` as switch
   * no need break
   * no need `else` if cases are exhaustive
+  * `when` cases have to be exhaustive
 * but `when` can do more: 
   * check values
+  * expression can be used as branch condition
 
 &nbsp;
 
@@ -82,6 +84,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * data class
 * `when` no need break, no need default if exhaustive
 * powerful `when`
+* smart cast
 
 &nbsp;
 
