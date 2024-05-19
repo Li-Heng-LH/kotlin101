@@ -102,6 +102,10 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * `try` is an expression.
 * `@Throws` annotation tells JVM to handle checked exception
 
+### Extensions
+* instance method in Kotlin
+* static method in Java
+
 &nbsp;
 
 ## Kotlin over Java:
@@ -117,6 +121,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
   * `if` is an expression
   * `throw` is an expression
   * `try` is an expression
+* Extensions
 
 &nbsp;
 
