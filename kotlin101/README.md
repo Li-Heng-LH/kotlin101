@@ -76,8 +76,20 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 
 &nbsp;
 
+### for loop
+* `in` to iterate through elements
+* `in` to iterate through range
+* `..` operator: upper bound inclusive
+* `until` operator: upper bound exclusive
 
-### Kotlin over Java: 
+&nbsp;
+
+### Pair
+* `to` keyword is used to create a Pair
+
+&nbsp;
+
+## Kotlin over Java:
 * top level functions
 * single expression functions
 * trailing commas
