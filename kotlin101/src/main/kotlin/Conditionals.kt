@@ -3,6 +3,7 @@ fun main() {
     println(getDescription(Color.BLUE))
     println(checkInput(""))
     println(checkInput("y"))
+    println(returnPair(16))
 }
 
 enum class Color {
@@ -34,4 +35,19 @@ fun mix(c1: Color,
         else -> "not sure"
     }
 
+fun returnPair(degrees: Int) =
+    //when can have no argument.
+    //in that case cases have to be boolean expression
+    when {
+        degrees < 5 -> Color.BLUE to "cold"
+        degrees < 23 -> Color.ORANGE to "mild"
+        else -> Color.RED to "hot"
+    }
+
+fun returnPair2(degrees: Int) =
+    when (degrees) {
+        // cases have same type as argument
+        5 -> "yes"
+        else -> "no"
+    }
 
