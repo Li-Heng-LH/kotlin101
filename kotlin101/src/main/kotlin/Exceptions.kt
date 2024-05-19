@@ -1,7 +1,9 @@
+import java.io.IOException
 import java.lang.NumberFormatException
 
 fun main() {
     testTry()
+    error() //note: in Kotlin still no need to handle
 }
 
 fun testThrow() {
@@ -19,5 +21,10 @@ fun testTry() {
         null
     }
     println(number)
+}
+
+@Throws(IOException::class)
+fun error() {
+    throw IOException()
 }
 

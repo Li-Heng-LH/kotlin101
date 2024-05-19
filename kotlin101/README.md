@@ -100,6 +100,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * There is no concept of checked or unchecked exceptions in Kotlin.
 * `throw` is an expression.
 * `try` is an expression.
+* `@Throws` annotation tells JVM to handle checked exception
 
 &nbsp;
 
