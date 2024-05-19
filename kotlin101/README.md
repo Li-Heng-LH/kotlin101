@@ -84,6 +84,13 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 
 &nbsp;
 
+### ranges
+* `in` has 2 purposes:
+  1. for iteration
+  2. to check for belonging
+
+&nbsp;
+
 ### Pair
 * `to` keyword is used to create a Pair
 
