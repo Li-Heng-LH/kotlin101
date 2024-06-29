@@ -1,4 +1,5 @@
 # kotlin101
+[Cheat Sheet](./CheatSheet.md)
 
 ## Some Learning Notes ##
 
@@ -80,7 +81,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * `in` to iterate through elements
 * `in` to iterate through range
 * `..` operator: upper bound inclusive
-* `until` operator: upper bound exclusive
+* `until` infix function: upper bound exclusive
 
 &nbsp;
 
@@ -121,24 +122,9 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 ### infix functions
 * can omit dot and parentheses
 * `1.until(10)` --> `1 until 10`   
+* In `Tuples.kt`, 
+  * `public infix fun <A, B> A.to(that: B): Pair<A, B> = Pair(this, that)`
 
-&nbsp;
-
-## Kotlin over Java:
-* top level functions
-* single expression functions
-* trailing commas
-* data class
-* `when` no need break, no need default if exhaustive
-* powerful `when`
-* smart cast
-* No checked exceptions in Kotlin. 
-* Expressions: 
-  * `if` is an expression
-  * `throw` is an expression
-  * `try` is an expression
-* Extensions
-* Infix functions
 
 &nbsp;
 
