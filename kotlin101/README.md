@@ -108,6 +108,8 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * `@Throws` annotation tells JVM to handle checked exception
 
 ### Extensions
+* To declare an extension function, prefix its name with a receiver type,  
+  which refers to the type being extended.
 * instance method in Kotlin
 * static method in Java
 * Cannot call private members from extensions. 
@@ -125,8 +127,15 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * In `Tuples.kt`, 
   * `public infix fun <A, B> A.to(that: B): Pair<A, B> = Pair(this, that)`
 
+&nbsp;
+
+### Multiline strings
+* using triple quote `"""`
+* contains no escaping and can contain newlines and any other characters
 
 &nbsp;
+
+
 
 &nbsp;
 ----

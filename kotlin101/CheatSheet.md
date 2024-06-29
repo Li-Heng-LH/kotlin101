@@ -23,6 +23,8 @@
 
 * Natural language to name test methods using backticks
 
+* Multiline strings using triple quote `"""`
+
 &nbsp;
 
 ## keyword, operator, infix function
