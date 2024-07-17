@@ -148,7 +148,11 @@ fun functionName(parameters: ParameterType): ReturnType = expression
   * but the compiler cannot infer that, 
   * so we assert that it is not null, 
   * and directly access the value.
-* 
+* Bad practice of using `!!` operator: 
+  * Bad practice to put two or more not-null assertion operators in one line.
+  * As you won't to be able to say which one cause the exception. 
+* In general prefer using safe operators: Safe access. Elvis separator or explicit checks 
+  * Use not null assertion only with care.
 
 &nbsp;
 
