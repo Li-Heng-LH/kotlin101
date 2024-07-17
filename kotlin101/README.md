@@ -143,7 +143,11 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 
 ### Nullability
 * cannot assign null to a non-nullable type
-* safe call operator: `?.`
+* Reason for Not-null assertion operator: 
+  * by logic of the application, the value cannot be null, 
+  * but the compiler cannot infer that, 
+  * so we assert that it is not null, 
+  * and directly access the value.
 * 
 
 &nbsp;
