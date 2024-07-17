@@ -4,6 +4,7 @@ fun main() {
     safeCallOperator()
     elvisOperator()
     smartCast()
+    notNullAssertion()
 }
 
 fun safeCallOperator() {
@@ -36,4 +37,10 @@ fun smartCast() {
     val s: String? = "good"
     if (s == null) return
     println(s.length) //no need to use safe call operator, smart cast after the null check
+}
+
+fun notNullAssertion() {
+    val s: String? = "good"
+    s!! //throws NPE if s is null
+    println(s.length) //no need to use safe call operator after the not-null assertion
 }
