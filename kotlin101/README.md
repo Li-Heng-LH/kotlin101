@@ -4,8 +4,8 @@
 ## Some Learning Notes ##
 
 ### Assignment
-* Before accessing a variable, 
-* it must have been given a value.
+* Before accessing a variable, it must have been given a value.
+* cannot assign null to a non-nullable type.
 
 &nbsp;
 
@@ -142,6 +142,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 &nbsp;
 
 ### Nullability
+* cannot assign null to a non-nullable type
 * safe call operator: `?.`
 * 
 

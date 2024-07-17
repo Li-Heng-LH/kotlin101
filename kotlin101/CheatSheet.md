@@ -35,6 +35,7 @@
 ## operators
 * `?.` : Safe call operator
 * `?:` : Elvis operator
+* `!!` : Not-null assertion operator
 
 &nbsp;
 
