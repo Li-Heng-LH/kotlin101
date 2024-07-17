@@ -3,6 +3,12 @@
 
 ## Some Learning Notes ##
 
+### Assignment
+* Before accessing a variable, 
+* it must have been given a value.
+
+&nbsp;
+
 ### Array ###
 * In bytecode level, Kotlin Array is same as Java Array. 
 * In Kotlin syntax, Array looks like a regular class with generic arguments.  
@@ -135,7 +141,11 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 
 &nbsp;
 
+### Nullability
+* safe call operator: `?.`
+* 
 
+&nbsp;
 
 &nbsp;
 ----

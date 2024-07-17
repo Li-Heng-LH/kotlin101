@@ -32,6 +32,10 @@
 * `?:` -> operator
 * `to` -> infix function
 
+## operators
+* `?.` : Safe call operator
+* `?:` : Elvis operator
+
 &nbsp;
 
 &nbsp;
