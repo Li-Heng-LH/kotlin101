@@ -11,7 +11,7 @@
 
 * `when` no need break, no need default if exhaustive
 * powerful `when`
-* smart cast
+* Smart Cast and control flow analysis
 * No checked exceptions in Kotlin.
 * Expressions:
     * `if` is an expression
@@ -25,6 +25,7 @@
 
 * Multiline strings using triple quote `"""`
 
+* Nullability and Null Safety
 * Nullable has no performance overhead compared to Optional in Java.
 
 &nbsp;
@@ -45,6 +46,7 @@
 &nbsp;
 
 ## Null Safety
+* `String` and `String?` are different types.
 * cannot assign null to a non-nullable type
 * cannot access a nullable type without checking for null
 * Kotlin Nullable != Java Optional

@@ -15,6 +15,7 @@ fun main() {
     smartCast()
     notNullAssertion()
     safeCast()
+    castingNull()
 }
 
 fun safeCallOperator() {
@@ -74,5 +75,11 @@ fun safeCast() {
 
     //above is equivalent to
     val s3 : String? = if (s is String) s else null
+}
 
+fun castingNull() {
+    //println(null as String) //NPE, null cannot be cast to non-null type
+    println( null as String? ) //null
+    println( null as? String ) //null, failed cast
+    println( null as? String? ) //null, successful cast
 }

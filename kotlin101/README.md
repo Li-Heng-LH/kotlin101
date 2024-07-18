@@ -142,6 +142,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 &nbsp;
 
 ### Nullability
+* `String` and `String?` are different types.
 * cannot assign null to a non-nullable type
 * cannot access a nullable type without checking for null
 * Only (?.) or (!!.) can be used to access a nullable type
