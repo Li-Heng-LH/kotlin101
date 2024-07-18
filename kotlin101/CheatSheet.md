@@ -28,6 +28,8 @@
 * Nullability and Null Safety
 * Nullable has no performance overhead compared to Optional in Java.
 
+* Functional Programming
+
 &nbsp;
 
 ## keyword, operator, infix function
