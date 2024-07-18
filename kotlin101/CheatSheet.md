@@ -19,7 +19,7 @@
     * `throw` is an expression
     * `try` is an expression
 
-* Extensions
+* Extensions: prefix fun name with receiver type and dot.
 
 * Natural language to name test methods using backticks
 
@@ -33,6 +33,9 @@
 * `in` -> keyword
 * `?:` -> operator
 * `to` -> infix function
+
+## Keywords
+* `as?` -> safe type cast
 
 ## operators
 * `?.` : Safe call operator

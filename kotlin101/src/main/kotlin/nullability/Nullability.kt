@@ -14,6 +14,7 @@ fun main() {
     elvisOperator()
     smartCast()
     notNullAssertion()
+    safeCast()
 }
 
 fun safeCallOperator() {
@@ -56,4 +57,22 @@ fun notNullAssertion() {
 
     //control flow analysis
     println(s.length) //no need to use safe call operator after the not-null assertion
+}
+
+fun String?.isEmptyOrNull() = this == null || this.isEmpty()
+
+fun safeCast() {
+
+    val s = "hello"
+    if (s is String) {
+        println(s.uppercase()) //smart cast
+    }
+
+    //safe type cast
+    val s2 : String? = s as? String
+    println(s2?.uppercase()) //HELLO
+
+    //above is equivalent to
+    val s3 : String? = if (s is String) s else null
+
 }
