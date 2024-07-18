@@ -1,6 +1,15 @@
 package nullability
 
 fun main() {
+
+    //assignments and access
+    //cannot assign null to a non-nullable type
+    //val s: String = null //compilation error
+
+    //cannot access a nullable type without a null check
+    val s: String? = null
+    //s.length //compilation error
+
     safeCallOperator()
     elvisOperator()
     smartCast()

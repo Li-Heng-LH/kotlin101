@@ -39,6 +39,13 @@
 
 &nbsp;
 
+## Null Safety
+* cannot assign null to a non-nullable type
+* cannot access a nullable type without checking for null
+
+&nbsp;
+
+
 &nbsp;
 ----
 ### Useful links ###
