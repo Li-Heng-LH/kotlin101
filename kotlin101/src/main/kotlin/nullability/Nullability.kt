@@ -36,11 +36,15 @@ fun elvisOperator() {
 fun smartCast() {
     val s: String? = "good"
     if (s == null) return
+
+    //control flow analysis
     println(s.length) //no need to use safe call operator, smart cast after the null check
 }
 
 fun notNullAssertion() {
     val s: String? = "good"
     s!! //throws NPE if s is null
+
+    //control flow analysis
     println(s.length) //no need to use safe call operator after the not-null assertion
 }

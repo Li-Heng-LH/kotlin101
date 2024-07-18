@@ -143,6 +143,9 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 
 ### Nullability
 * cannot assign null to a non-nullable type
+* Kotlin compiler is able to perform **control flow analysis** 
+  * and **apply smart casts to cast a nullable type to a non-nullable type**, 
+  * so that you can access the value without any additional checks.
 * Reason for Not-null assertion operator: 
   * by logic of the application, the value cannot be null, 
   * but the compiler cannot infer that, 
