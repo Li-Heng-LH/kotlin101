@@ -168,6 +168,9 @@ fun functionName(parameters: ParameterType): ReturnType = expression
   * At the same time, nullable types don't create any wrappers. 
   * They are implemented by annotations.
   * Compared to Java Optional, this gives no overhead.
+  * Also, regarding subtyping, 
+    * in Kotlin, can assign `String` to `String?`,
+    * in Java, cannot assign `String` to `Optional<String>`.
 * Safe cast: 
   * `as?` : `if (s is String) s else null`
 

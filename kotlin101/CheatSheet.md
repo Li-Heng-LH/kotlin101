@@ -50,7 +50,8 @@
 * cannot assign null to a non-nullable type
 * cannot access a nullable type without checking for null
 * Kotlin Nullable != Java Optional
-* 
+  * in Kotlin, can assign `String` to `String?`,
+  * in Java, cannot assign `String` to `Optional<String>`.
 &nbsp;
 
 
