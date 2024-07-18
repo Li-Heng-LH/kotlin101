@@ -25,6 +25,8 @@
 
 * Multiline strings using triple quote `"""`
 
+* Nullable has no performance overhead compared to Optional in Java.
+
 &nbsp;
 
 ## keyword, operator, infix function
@@ -42,7 +44,8 @@
 ## Null Safety
 * cannot assign null to a non-nullable type
 * cannot access a nullable type without checking for null
-
+* Kotlin Nullable != Java Optional
+* 
 &nbsp;
 
 
@@ -51,4 +54,4 @@
 ### Useful links ###
 * [Coding conventions](https://kotlinlang.org/docs/coding-conventions.html)
 * [Keywords and operators](https://kotlinlang.org/docs/keyword-reference.html)
-* []()
+* [Operator precedence](https://kotlinlang.org/docs/reference/grammar.html#expressions)

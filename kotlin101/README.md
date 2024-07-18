@@ -158,7 +158,15 @@ fun functionName(parameters: ParameterType): ReturnType = expression
   * As you won't to be able to say which one cause the exception. 
 * In general prefer using safe operators: Safe access. Elvis separator or explicit checks 
   * Use not null assertion only with care.
-
+* Nullable types under the hood:
+  * Under the hood, nullable types are implemented using annotations. 
+  * Kotlin compiler simply adds Nullable and NotNullable annotations to the corresponding types usages.
+* *Kotlin Nullable != Java Optional*
+  * Java Optional type is a wrapper that stores the reference to the initial object. 
+  * For each optional value an extra object is created. 
+  * At the same time, nullable types don't create any wrappers. 
+  * They are implemented by annotations.
+  * Compared to Java Optional, this gives no overhead.
 &nbsp;
 
 &nbsp;
