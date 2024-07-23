@@ -179,7 +179,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 ### Functional Programming
 * Functions are treated as first-class citizens, meaning they can be passed as arguments, returned from other functions, and assigned to variables. 
 * Higher-order functions are functions that take other functions as parameters or return them as results.
-* Function types:  
+* Kotlin has Function types
 * A lambda expression is always surrounded by curly braces.
 
 &nbsp;

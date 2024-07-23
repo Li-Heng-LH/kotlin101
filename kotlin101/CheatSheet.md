@@ -28,7 +28,11 @@
 * Nullability and Null Safety
 * Nullable has no performance overhead compared to Optional in Java.
 
-* Functional Programming
+* Functional Programming: 
+  * Java's functional programming is achieved through functional interfaces. 
+  * Kotlin has native support for higher order functions.
+  * Functions in Kotlin are first class citizens.
+  * Kotlin has function types
 
 &nbsp;
 
