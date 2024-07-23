@@ -182,6 +182,18 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * Kotlin has Function types
 * **`()` is needed to declare function types**
 * **`{}` is needed to instantiate lambda**
+* **`{}` for lambdas are bolded in Intellij to distinguish from conditionals**
+
+* trailing lambda: 
+  *  if the last parameter of a function is a function, 
+  *  then the lambda can be placed outside the parentheses.
+  *  If the lambda is the only argument in that call, 
+  *  the parentheses can be omitted entirely. 
+
+* Destructuring in lambdas: 
+  * If a lambda has a parameter of the Pair type, or Map.Entry
+  * destructuring declarations can be used
+  * several new parameters instead of one are put in parentheses.
 
 &nbsp;
 ----

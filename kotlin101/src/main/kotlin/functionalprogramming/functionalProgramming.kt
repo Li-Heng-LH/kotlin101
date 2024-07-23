@@ -9,4 +9,6 @@ fun main() {
     println(increment(1)) // 2
     println(increment2(1)) // 2
     println(increment3(1)) // 2
+
+    //TODO 2 arguments
 }

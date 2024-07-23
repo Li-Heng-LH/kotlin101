@@ -33,6 +33,7 @@
   * Kotlin has native support for higher order functions.
   * Functions in Kotlin are first class citizens.
   * Kotlin has function types
+  * trailing lambdas
 
 &nbsp;
 
@@ -48,6 +49,9 @@
 * `?.` : Safe call operator
 * `?:` : Elvis operator
 * `!!` : Not-null assertion operator
+
+## special identifier
+* `it`: implicit name of a **single** parameter
 
 &nbsp;
 
