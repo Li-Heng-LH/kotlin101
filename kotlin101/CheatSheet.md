@@ -25,7 +25,9 @@
 
 * Multiline strings using triple quote `"""`
 
-* Nullability and Null Safety
+* String templates are generally preferred over string concatenation.
+
+* Null Safety: cannot access a nullable type without checking for null
 * Nullable has no performance overhead compared to Optional in Java.
 
 * Functional Programming: 

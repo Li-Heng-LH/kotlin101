@@ -144,7 +144,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 ### Nullability
 * `String` and `String?` are different types.
 * cannot assign null to a non-nullable type
-* cannot access a nullable type without checking for null
+* **cannot access a nullable type without checking for null**
 * Only (?.) or (!!.) can be used to access a nullable type
 * Kotlin compiler is able to perform **control flow analysis** 
   * and **apply smart casts to cast a nullable type to a non-nullable type**, 
@@ -183,6 +183,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * **`()` is needed to declare function types**
 * **`{}` is needed to instantiate lambda**
 * **`{}` for lambdas are bolded in Intellij to distinguish from conditionals**
+* `()` is needed for fun type declarations. If `()` shows in fun arguments, it is destructuring declaration. 
 
 * trailing lambda: 
   *  if the last parameter of a function is a function, 
@@ -191,7 +192,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
   *  the parentheses can be omitted entirely. 
 
 * Destructuring in lambdas: 
-  * If a lambda has a parameter of the Pair type, or Map.Entry
+  * If a lambda has a parameter of the `Pair` type, or `Map.Entry`
   * destructuring declarations can be used
   * several new parameters instead of one are put in parentheses.
 
@@ -201,10 +202,21 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * These are defined as extension functions in the Kotlin standard library.
 * There is no need to convert to 'Stream' before calling them. 
 * There is also no need to 'collect' the result back to a collection. 
-* `filter`: returns a new collection
-* `map`: returns a new collection
-* `any`, `all`, `none`: return a boolean
-* 
+#### Table of common operations
+| fun           | parameter                       | return               | e.g.                                |
+|---------------|---------------------------------|----------------------|-------------------------------------|
+| filter        | predicate                       | new collection       |                                     |
+| map           | transform fun                   | new collection       |                                     |
+| any/all/none  | predicate                       | bool                 |                                     |
+| find          | predicate                       | nullable             |                                     |
+| first         | predicate                       | element              |                                     |
+| firstOrNull   | predicate                       | nullable             |                                     |
+| partition     | predicate                       | Pair of lists        | (match, rest)                       |
+| groupBy       | keySelector fun                 | Map of key and lists | {3=[one, two], 5=[three], 4=[four]} |
+| associateBy   | keySelector fun                 | Map                  | {3=two, 5=three, 4=four}            |
+| associateWith | valueSelector fun               | Map                  | {one=3, two=3, three=5, four=4}     |
+| associate     | transform fun that returns Pair | Map                  |                                     |
+|               |                                 |                      |                                     |
 
 &nbsp;
 
