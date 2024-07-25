@@ -196,6 +196,19 @@ fun functionName(parameters: ParameterType): ReturnType = expression
   * several new parameters instead of one are put in parentheses.
 
 &nbsp;
+
+### Common operations on collections
+* These are defined as extension functions in the Kotlin standard library.
+* There is no need to convert to 'Stream' before calling them. 
+* There is also no need to 'collect' the result back to a collection. 
+* `filter`: returns a new collection
+* `map`: returns a new collection
+* `any`, `all`, `none`: return a boolean
+* 
+
+&nbsp;
+
+&nbsp;
 ----
 ### Useful links ###
 * []()

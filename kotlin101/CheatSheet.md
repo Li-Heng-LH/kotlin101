@@ -34,6 +34,7 @@
   * Functions in Kotlin are first class citizens.
   * Kotlin has function types
   * trailing lambdas
+  * common operations are extension functions, no need to convert to 'stream'
 
 &nbsp;
 
@@ -51,7 +52,7 @@
 * `!!` : Not-null assertion operator
 
 ## special identifier
-* `it`: implicit name of a **single** parameter
+* `it`: implicit name for **single** parameter
 
 &nbsp;
 
