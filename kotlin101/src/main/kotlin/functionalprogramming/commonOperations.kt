@@ -85,4 +85,15 @@ fun main () {
         listOf("one", "two", "three", "four")
             .associate { "$it!" to it.length } // {one!=3, two!=3, three!=5, four!=4}
     )
+
+    val numberSets = listOf(setOf(1, 2, 3), setOf(4, 5, 6), setOf(1, 2))
+    println(numberSets.flatten()) // [1, 2, 3, 4, 5, 6, 1, 2]
+
+    // only flatten one level
+    val numbers2 = listOf(setOf(1, 2, 3), setOf(setOf(4, 5, 6), 5, 6), listOf(1, 2))
+    println(numbers2.flatten()) // [1, 2, 3, [4, 5, 6], 5, 6, 1, 2]
+
+    // flatMap is a combination of map and flatten
+    // map first, then flatten
+    println(numberSets.flatMap { it }) // [1, 2, 3, 4, 5, 6, 1, 2]
 }
