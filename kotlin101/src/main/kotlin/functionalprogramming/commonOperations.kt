@@ -99,5 +99,9 @@ fun main () {
     // just map to the same set
     println(numberSets.flatMap { it }) // [1, 2, 3, 4, 5, 6, 1, 2]
 
+    println(
+        listOf(1, 2, 3, 4, 5)
+            .reduce { acc, i -> acc + i } // 15
+    ) //the initial value for acc is the first element in the list
 
 }
