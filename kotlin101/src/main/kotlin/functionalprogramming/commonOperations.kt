@@ -104,4 +104,11 @@ fun main () {
             .reduce { acc, i -> acc + i } // 15
     ) //the initial value for acc is the first element in the list
 
+    println(
+        listOf("A", "B", "C") zip listOf(1, 2, 3) // [(A, 1), (B, 2), (C, 3)]
+    )
+
+    println(
+        listOf(1, 2, 3, 4, 5, 6).zipWithNext() // [(1, 2), (2, 3), (3, 4), (4, 5), (5, 6)]
+    )
 }

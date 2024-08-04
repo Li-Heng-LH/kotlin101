@@ -219,6 +219,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 | flatten       |                                        | new collection       | only flatten one level              |
 | flatMap       | mapping fun                            | new collection       | map then flatten                    |
 | reduce        | fun that takes in left and right value | single element       |                                     |
+| zip           | another iterable                       | list of pairs        |                                     |
 |               |                                        |                      |                                     |
 
 
