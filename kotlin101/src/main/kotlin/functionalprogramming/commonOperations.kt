@@ -95,5 +95,9 @@ fun main () {
 
     // flatMap is a combination of map and flatten
     // map first, then flatten
+    // above flatten is equivalent to below flatMap
+    // just map to the same set
     println(numberSets.flatMap { it }) // [1, 2, 3, 4, 5, 6, 1, 2]
+
+
 }

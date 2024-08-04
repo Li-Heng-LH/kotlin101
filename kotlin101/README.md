@@ -203,20 +203,26 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * There is no need to convert to 'Stream' before calling them. 
 * There is also no need to 'collect' the result back to a collection. 
 #### Table of common operations
-| fun           | parameter                       | return               | e.g.                                |
-|---------------|---------------------------------|----------------------|-------------------------------------|
-| filter        | predicate                       | new collection       |                                     |
-| map           | transform fun                   | new collection       |                                     |
-| any/all/none  | predicate                       | bool                 |                                     |
-| find          | predicate                       | nullable             |                                     |
-| first         | predicate                       | element              |                                     |
-| firstOrNull   | predicate                       | nullable             |                                     |
-| partition     | predicate                       | Pair of lists        | (match, rest)                       |
-| groupBy       | keySelector fun                 | Map of key and lists | {3=[one, two], 5=[three], 4=[four]} |
-| associateBy   | keySelector fun                 | Map                  | {3=two, 5=three, 4=four}            |
-| associateWith | valueSelector fun               | Map                  | {one=3, two=3, three=5, four=4}     |
-| associate     | transform fun that returns Pair | Map                  |                                     |
-|               |                                 |                      |                                     |
+| fun           | parameter       | return               | e.g.                                |
+|---------------|-----------------|----------------------|-------------------------------------|
+| filter        | predicate       | new collection       |                                     |
+| map           | transform fun   | new collection       |                                     |
+| any/all/none  | predicate       | bool                 |                                     |
+| find          | predicate       | nullable             |                                     |
+| first         | predicate       | element              |                                     |
+| firstOrNull   | predicate       | nullable             |                                     |
+| partition     | predicate       | Pair of lists        | (match, rest)                       |
+| groupBy       | key generator   | Map of key and lists | {3=[one, two], 5=[three], 4=[four]} |
+| associateBy   | key generator   | Map                  | {3=two, 5=three, 4=four}            |
+| associateWith | value generator | Map                  | {one=3, two=3, three=5, four=4}     |
+| associate     | entry generator | Map                  |                                     |
+| flatten       |                 | new collection       | only flatten one level              |
+| flatMap       | mapping fun     | new collection       | map then flatten                    |
+
+
+* `flatMap` between Kotlin and Java:
+  * mapper function in Java `flatMap` returns a `stream`
+  * mapper function in Kotlin `flatMap` returns a `collection`
 
 &nbsp;
 
