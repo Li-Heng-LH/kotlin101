@@ -27,6 +27,13 @@
 
 * String templates are generally preferred over string concatenation.
 
+* destructuring declaration: 
+  * destructure a data class
+  * destructure a map entry
+  * destructure a Pair
+
+* indexed access operator  (`[]`) translated to calls of `get` and `set`
+
 * Null Safety: cannot access a nullable type without checking for null
 * Nullable has no performance overhead compared to Optional in Java.
 
