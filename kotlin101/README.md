@@ -227,6 +227,12 @@ fun functionName(parameters: ParameterType): ReturnType = expression
   * mapper function in Java `flatMap` returns a `stream`
   * mapper function in Kotlin `flatMap` returns a `collection`
 
+* These functions have overloaded forms that have offer better usability over Java counterparts: 
+  * `count()` and `count{predicate}`
+  * `any()` and `any{predicate}`
+  * `first()` and `first{predicate}`
+  * `firstOrNull()` and `firstOrNull{predicate}`
+
 &nbsp;
 
 &nbsp;
