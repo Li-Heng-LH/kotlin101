@@ -48,6 +48,9 @@
     * no need to 'collect'
   * powerful, overloaded common operations
 
+* Lazy evaluation: 
+  * `getOrElse` only calls the `defaultValue` function when cannot get
+
 &nbsp;
 
 ## keyword, operator, infix function
@@ -62,6 +65,7 @@
 * `?.` : Safe call operator
 * `?:` : Elvis operator
 * `!!` : Not-null assertion operator
+* `[]` : indexed access operator
 
 ## special identifier
 * `it`: implicit name for **single** parameter

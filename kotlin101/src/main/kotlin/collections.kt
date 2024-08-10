@@ -23,6 +23,17 @@ fun main() {
     val (k, v) = myPair
     println("$k, $v")
 
+    //getOrElse only calls the defaultValue function when cannot get
+    //lazy evaluation
+    //trailing lambda
+    println("getOrElse on List: ")
+    println(
+        listOf(1, 2, 3).getOrElse(100) { it } //100
+    )
+    println("getOrElse on Map: ")
+    println(
+        myMap.getOrElse("EFG") { 100 } //100
+    )
 }
 
 data class Person(
