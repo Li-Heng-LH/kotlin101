@@ -36,7 +36,10 @@
   * Functions in Kotlin are first class citizens.
   * Kotlin has function types
   * trailing lambdas
-  * common operations are extension functions, no need to convert to 'stream'
+  * common operations are **extension functions**: 
+    * no need to convert to 'stream'
+    * no need to 'collect'
+  * powerful, overloaded common operations
 
 &nbsp;
 

@@ -215,13 +215,12 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 | groupBy       | key generator                          | Map of key and lists | {3=[one, two], 5=[three], 4=[four]} |
 | associateBy   | key generator                          | Map                  | {3=two, 5=three, 4=four}            |
 | associateWith | value generator                        | Map                  | {one=3, two=3, three=5, four=4}     |
-| associate     | entry generator                        | Map                  |                                     |
+| associate     | pair generator (ele -> sth to sth)     | Map                  |                                     |
 | flatten       |                                        | new collection       | only flatten one level              |
 | flatMap       | mapping fun                            | new collection       | map then flatten                    |
 | reduce        | fun that takes in left and right value | single element       |                                     |
 | zip           | another iterable                       | list of pairs        |                                     |
 |               |                                        |                      |                                     |
-
 
 * `flatMap` between Kotlin and Java:
   * mapper function in Java `flatMap` returns a `stream`
@@ -232,6 +231,13 @@ fun functionName(parameters: ParameterType): ReturnType = expression
   * `any()` and `any{predicate}`
   * `first()` and `first{predicate}`
   * `firstOrNull()` and `firstOrNull{predicate}`
+
+| kotlin        | java                                                          |
+|---------------|---------------------------------------------------------------|
+| count{}       | .filter() .count()                                            |
+| firstOrNull{} | .filter() .findFirst()                                        |
+| groupBy{}     | .collect(Collectors.groupingBy())                             |
+| associateBy{} | .collect(Collectors.toMap(Function, Function, mergeFunction)) |
 
 &nbsp;
 
