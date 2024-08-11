@@ -180,10 +180,11 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * Functions are treated as first-class citizens, meaning they can be passed as arguments, returned from other functions, and assigned to variables. 
 * Higher-order functions are functions that take other functions as parameters or return them as results.
 * Kotlin has Function types
-* **`()` is needed to declare function types**
-* **`{}` is needed to instantiate lambda**
+* **`()` is compulsory to declare function types**
+* **`{}` is compulsory to instantiate lambda**
 * **`{}` for lambdas are bolded in Intellij to distinguish from conditionals**
-* `()` is needed for fun type declarations. If `()` shows in fun arguments, it is destructuring declaration. 
+* `()` is compulsory for fun type declarations, even when there is only one parameter.
+* If `()` shows in fun arguments, it is destructuring declaration. 
 
 * Kotlin Lambda Syntax
   * A lambda expression is always surrounded by curly braces.
