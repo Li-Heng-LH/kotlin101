@@ -185,6 +185,20 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * **`{}` for lambdas are bolded in Intellij to distinguish from conditionals**
 * `()` is needed for fun type declarations. If `()` shows in fun arguments, it is destructuring declaration. 
 
+* Kotlin Lambda Syntax
+  * A lambda expression is always surrounded by curly braces.
+  * If the inferred return type of the lambda is not Unit, 
+    the last (or possibly single) expression inside the lambda body is treated as the return value.
+  * to explicitly return a value from the lambda, use the qualified return syntax (return to label). 
+
+| Java                                                               | Kotlin                                                  |
+|--------------------------------------------------------------------|---------------------------------------------------------|
+| () -> System.out.println("Hello")                                  | { println("Hello") }                                    |
+| i -> i > 0                                                         | { it > 0 }                                              |
+| (i, i2) -> i == i2                                                 | { i, i2 -> i == i2 }                                    |
+| (i, i2) -> { System.out.println("bi predicate"); return i == i2; } | { i, i2 -> println("hello from biPredicate2") i == i2 } |
+
+
 * trailing lambda: 
   *  if the last parameter of a function is a function, 
   *  then the lambda can be placed outside the parentheses.
