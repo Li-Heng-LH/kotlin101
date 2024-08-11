@@ -35,6 +35,10 @@ fun main() {
     val postponeRun: (Int, Runnable) -> Unit = { _, _ -> }
     postponeRun(1_0000, runnable) //SAM convention
     postponeRun(1_000) { println("I am lambda") } //lambda
+
+    //nullable function
+    val foo: (() -> Unit)? = null
+    foo?.invoke() //safe call on nullable fun
 }
 
 fun postponeRun(delay: Int, runnable: Runnable) {}
