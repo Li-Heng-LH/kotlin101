@@ -35,8 +35,3 @@ fun main() {
         myMap.getOrElse("EFG") { 100 } //100
     )
 }
-
-data class Person(
-    val name: String,
-    val age: Int,
-)

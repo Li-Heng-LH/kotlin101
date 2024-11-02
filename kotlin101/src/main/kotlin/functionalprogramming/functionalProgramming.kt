@@ -10,7 +10,7 @@ fun main() {
     println(increment2(1)) // 2
     println(increment3(1)) // 2
 
-    //lambda with 2 arguments
+    // lambda with 2 arguments
     // parentheses in function type
     // no parentheses in lambda arguments
     val sum: (Int, Int) -> Int = { a, b -> a + b }
