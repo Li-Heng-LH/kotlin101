@@ -17,9 +17,14 @@ fun main() {
 
     // We can store lambda's in variables
     // and this is a Function type
-    val isEven_Lambda: (Int) -> Boolean = { i -> i % 2 == 0 }
+    val isEven_Lambda  = { i:Int -> i % 2 == 0 }
     // However, we can't store a function in a variable
     fun isEven_Fun(i: Int) = i % 2 == 0
     //val isEven_Fun2 = isEven_Fun  //Compiler error
 
+    // Use Function Reference
+    val predicate = ::isEven_Fun
+    println(predicate(4))
+    // The above is the same as:
+    val predicate2 = { i:Int -> isEven_Fun(i) }
 }

@@ -39,6 +39,12 @@ fun main() {
     //nullable function
     val foo: (() -> Unit)? = null
     foo?.invoke() //safe call on nullable fun
+
+    // 2 ways to write lambdas:
+    // 1: with type declaration, can use it
+    val isEven_type: (Int) -> Boolean = { it % 2 == 0 }
+    // 2: without type declaration
+    val isEven_no_type = { i: Int -> i % 2 == 0 }
 }
 
 fun postponeRun(delay: Int, runnable: Runnable) {}

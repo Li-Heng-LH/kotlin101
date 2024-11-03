@@ -188,19 +188,23 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * If `()` shows in fun arguments, it is destructuring declaration. 
 * A lambda can be stored in a variable. But a `fun` cannot be stored in a variable.  
   This is due to how JVM works under the hood.
+* Member reference uses `()`
 
 * Kotlin Lambda Syntax
   * A lambda expression is always surrounded by curly braces.
   * If the inferred return type of the lambda is not Unit, 
     the last (or possibly single) expression inside the lambda body is treated as the return value.
   * to explicitly return a value from the lambda, use the qualified return syntax (return to label). 
+  * Multiple statements in a lambda body:
+    * separate them using semicolons or 
+    * place them on separate lines within the lambda body
 
-| Java                                                               | Kotlin                                                  |
-|--------------------------------------------------------------------|---------------------------------------------------------|
-| () -> System.out.println("Hello")                                  | { println("Hello") }                                    |
-| i -> i > 0                                                         | { it > 0 }                                              |
-| (i, i2) -> i == i2                                                 | { i, i2 -> i == i2 }                                    |
-| (i, i2) -> { System.out.println("bi predicate"); return i == i2; } | { i, i2 -> println("hello from biPredicate2") i == i2 } |
+| Java                                                               | Kotlin                                                   |
+|--------------------------------------------------------------------|----------------------------------------------------------|
+| () -> System.out.println("Hello")                                  | { println("Hello") }                                     |
+| i -> i > 0                                                         | { it > 0 }                                               |
+| (i, i2) -> i == i2                                                 | { i, i2 -> i == i2 }                                     |
+| (i, i2) -> { System.out.println("bi predicate"); return i == i2; } | { i, i2 -> println("hello from biPredicate2"); i == i2 } |
 
 
 * trailing lambda: 
