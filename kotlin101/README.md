@@ -186,6 +186,8 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * **`{}` for lambdas are bolded in Intellij to distinguish from conditionals**
 * `()` is compulsory for fun type declarations, even when there is only one parameter.
 * If `()` shows in fun arguments, it is destructuring declaration. 
+* A lambda can be stored in a variable. But a `fun` cannot be stored in a variable.  
+  This is due to how JVM works under the hood.
 
 * Kotlin Lambda Syntax
   * A lambda expression is always surrounded by curly braces.

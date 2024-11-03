@@ -28,4 +28,6 @@ fun main() {
     // a lambda can be stored in a variable.
     val isEven: (Int) -> Boolean = { it % 2 == 0 }
     println(isEven(2)) // true
+    val filtered = listOf(1, 2, 3, 4).filter(isEven)
+    println("Filtered: $filtered")
 }
