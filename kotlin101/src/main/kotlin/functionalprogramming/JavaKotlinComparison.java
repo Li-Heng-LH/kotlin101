@@ -1,6 +1,7 @@
 package functionalprogramming;
 
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class JavaKotlinComparison {
@@ -42,5 +43,10 @@ public class JavaKotlinComparison {
                                 Function.identity(),
                                 (existing, replacement) -> replacement))
         ); // {2=is, 3=fun, 4=java, 6=kotlin, 7=between, 10=comparison}
+
+
+        // Java functional programming is achieved through Functional Interfaces
+        Predicate<Integer> isEven = i -> i % 2 == 0;
+        System.out.println(isEven.test(2)); // true
     }
 }

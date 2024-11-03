@@ -22,4 +22,10 @@ fun main() {
         MyCollection.myList
             .associateBy { it.length }
     ) // {10=comparison, 7=between, 4=java, 3=fun, 6=kotlin, 2=is}
+
+
+    // in Kotlin, there is Function Type,
+    // a lambda can be stored in a variable.
+    val isEven: (Int) -> Boolean = { it % 2 == 0 }
+    println(isEven(2)) // true
 }
