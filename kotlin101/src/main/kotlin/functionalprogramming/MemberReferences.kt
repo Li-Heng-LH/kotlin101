@@ -26,5 +26,13 @@ fun main() {
     val predicate = ::isEven_Fun
     println(predicate(4))
     // The above is the same as:
-    val predicate2 = { i:Int -> isEven_Fun(i) }
+    val predicate2 = { i:Int -> isEven_Fun(i) } // A lambda that calls a function
+
+    /*
+     * Passing function reference as an argument
+     */
+    val list = listOf(1, 2, 3, 4)
+    println(list.any(isEven_Lambda))
+    // above can also be written in function reference form:
+    println(list.any(::isEven_Fun))
 }

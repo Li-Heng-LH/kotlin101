@@ -188,7 +188,7 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 * If `()` shows in fun arguments, it is destructuring declaration. 
 * A lambda can be stored in a variable. But a `fun` cannot be stored in a variable.  
   This is due to how JVM works under the hood.
-* Member reference uses `()`
+* [Member reference](#member-reference) uses `()`
 
 * Kotlin Lambda Syntax
   * A lambda expression is always surrounded by curly braces.
@@ -217,6 +217,11 @@ fun functionName(parameters: ParameterType): ReturnType = expression
   * If a lambda has a parameter of the `Pair` type, or `Map.Entry`
   * destructuring declarations can be used
   * several new parameters instead of one are put in parentheses.
+
+&nbsp;
+
+### Member reference
+* 
 
 &nbsp;
 
