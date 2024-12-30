@@ -35,4 +35,7 @@ fun main() {
     println(list.any(isEven_Lambda))
     // above can also be written in function reference form:
     println(list.any(::isEven_Fun))
+
+
+
 }
