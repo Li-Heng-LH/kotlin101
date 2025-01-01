@@ -220,8 +220,10 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 
 &nbsp;
 
-### Member reference
-* 
+#### Returning from lambdas
+* `return` in Kotlin always return from function marked with `fun`.
+* You can explicitly return a value from the lambda using the qualified return syntax. 
+* Otherwise, the value of the last expression is implicitly returned. 
 
 &nbsp;
 
@@ -267,6 +269,8 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 | associateBy{} | .collect(Collectors.toMap(Function, Function, mergeFunction)) |
 
 &nbsp;
+
+
 
 &nbsp;
 ----

@@ -81,6 +81,9 @@
   * in Java, cannot assign `String` to `Optional<String>`.
 &nbsp;
 
+## Returning from lambdas
+* `return` in Kotlin always return from function marked with `fun`.
+* In lambda, the value of the last expression is implicitly returned.
 
 &nbsp;
 ----
