@@ -3,6 +3,11 @@ package functionalprogramming
 fun main() {
     println(duplicateNonZero(listOf(3, 0, 5,)))
     println(duplicateNonZero_implicit_return(listOf(3, 0, 5,)))
+
+    listOf(1, 2, 3, 4).forEach {
+        if (it == 3) return@forEach // equivalent to continue in a loop
+        print("$it ")
+    }
 }
 
 fun duplicateNonZero(list: List<Int>) : List<Int> {
