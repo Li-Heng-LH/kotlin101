@@ -270,7 +270,12 @@ fun functionName(parameters: ParameterType): ReturnType = expression
 
 &nbsp;
 
+## OOP
 
+### Properties
+* 
+
+&nbsp;
 
 &nbsp;
 ----
