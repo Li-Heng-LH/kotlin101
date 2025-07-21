@@ -87,6 +87,14 @@
   * or stored in a top-level variable and reused throughout the application.
 
 
+* A `Channel` is conceptually very similar to `BlockingQueue`. 
+* One key difference is that instead of a blocking `put` operation it has a suspending `send`, 
+* and instead of a blocking `take` operation it has a suspending `receive`.
+* Channels are used to communicate between coroutines
+* Unlike a queue, a channel can be `closed` to indicate that no more elements are coming. 
+* Conceptually, a `close` is like sending a special close token to the channel. 
+* 
+
 &nbsp;
 
 
