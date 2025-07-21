@@ -13,11 +13,15 @@
 &nbsp;
 
 ### Structured concurrency
-* 
+* new coroutines can only be launched in a specific CoroutineScope 
+* which delimits the lifetime of the coroutine.
+* `runBlocking` establishes the corresponding scope
+* Structured concurrency ensures that they are not lost and do not leak.
+* An outer scope **cannot complete until** all its children coroutines complete.
 
 &nbsp;
 
-### 2
+### Basics
 * 3 ways to create a coroutine / coroutine builder: 
   * `launch`
   * `async`
@@ -44,4 +48,23 @@
 * until all the coroutines inside `runBlocking` complete their execution. 
 * You will often see runBlocking used like that at the very top-level of the application and quite rarely inside the real code. 
 
+* `suspend` function: 
+* additional feature is that they can, in turn, use other suspending functions (like `delay` in this example) 
+* to suspend execution of a coroutine.
+
+* `coroutineScope`: Scope builder
+* `runBlocking` and `coroutineScope` builders both wait for their body and all its children to complete.
+* The main difference is that the `runBlocking` blocks the current thread for waiting, 
+* while `coroutineScope` just suspends, releasing the underlying thread for other usages. 
+* `runBlocking` is a **regular** function while `coroutineScope` is a **suspending** function.
+
+* A `coroutineScope` builder can be used inside any suspending function to perform multiple concurrent operations.
+
+* A `launch` coroutine builder returns a `Job` object that is a handle to the launched coroutine and 
+* can be used to wait for its completion explicitly.
+
 &nbsp;
+
+
+
+
