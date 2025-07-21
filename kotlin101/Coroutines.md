@@ -73,6 +73,19 @@
 * `async` coroutine builder returns a `Deferred` object that is a handle to the launched coroutine and
 * can be used to wait for its completion and get the result of the coroutine.
 
+* Coroutine context: 
+* The `coroutine context` includes a coroutine `dispatcher` that 
+* determines what thread or threads the corresponding coroutine uses. 
+* The coroutine dispatcher can **confine coroutine execution** to 
+  * a specific thread, 
+  * dispatch it to a thread pool, 
+  * or let it run unconfined.
+* `Dispatchers.Default` uses a shared background pool of threads.
+* `newSingleThreadContext` creates a thread for the coroutine to run. 
+  * A dedicated thread is a very expensive resource. 
+  * In a real application it must be either released, when no longer needed, using the close function, 
+  * or stored in a top-level variable and reused throughout the application.
+
 
 &nbsp;
 
