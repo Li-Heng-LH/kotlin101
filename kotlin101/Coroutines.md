@@ -16,10 +16,17 @@
 * new coroutines can only be launched in a specific CoroutineScope 
 * which delimits the lifetime of the coroutine.
 * `runBlocking` establishes the corresponding scope
-* Structured concurrency ensures that they are not lost and do not leak.
+* **Structured concurrency** ensures that they are not lost and do not leak.
 * An outer scope **cannot complete until** all its children coroutines complete.
 
 &nbsp;
+
+### Cancellation is cooperative
+* Coroutines are cancellable, but cancellation is cooperative.
+* This means that a coroutine must check for cancellation explicitly and handle it.
+* This is achieved using mechanisms like `isActive`, `yield`, or **cancellation-aware suspending functions** 
+* (e.g., `delay` or `withContext`).
+
 
 ### Basics
 * 3 ways to create a coroutine / coroutine builder: 
@@ -62,6 +69,10 @@
 
 * A `launch` coroutine builder returns a `Job` object that is a handle to the launched coroutine and 
 * can be used to wait for its completion explicitly.
+
+* `async` coroutine builder returns a `Deferred` object that is a handle to the launched coroutine and
+* can be used to wait for its completion and get the result of the coroutine.
+
 
 &nbsp;
 
